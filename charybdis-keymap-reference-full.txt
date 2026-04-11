@@ -1,0 +1,217 @@
+Charybdis Keymap Reference (Actual Current Keymap)
+==================================================
+
+This file reflects the actual current bindings in config/charybdis.keymap.
+
+Legend
+------
+- TRNS = transparent
+- NONE = intentionally unused
+- Thumb rows are shown separately
+- Layer numbers:
+  0 = Base
+  1 = Nav
+  2 = Mouse
+  3 = Media
+  4 = Num
+  5 = Sym
+  6 = Fun
+
+Physical Thumb Clusters
+-----------------------
+
+Left thumb cluster
+Top row:    [ BSPC ] [ MO(5) ] [ LCLK / LT(2) ]
+Bottom row: [ LALT ] [ LGUI ]
+
+Right thumb cluster
+Top row:    [ MO(1) ] [ SPACE ]
+Bottom row: [ RET ]
+
+Notes:
+- MO(1) = momentary Nav layer while held
+- MO(5) = momentary Sym layer while held
+- LT(2, LCLK) = tap for left click, hold for Mouse layer
+
+Layer 0 - Base
+--------------
+
+Main matrix:
+
+Left side
+Row 1: [ ESC   ] [ 1    ] [ 2    ] [ 3    ] [ 4    ] [ 5    ]
+Row 2: [ TAB   ] [ Q    ] [ W    ] [ E    ] [ R    ] [ T    ]
+Row 3: [ LCTRL ] [ A    ] [ S    ] [ D    ] [ F    ] [ G    ]
+Row 4: [ LSHFT ] [ Z    ] [ X    ] [ C    ] [ V    ] [ B    ]
+
+Right side
+Row 1: [ 6     ] [ 7    ] [ 8    ] [ 9    ] [ 0    ] [ MINUS ]
+Row 2: [ Y     ] [ U    ] [ I    ] [ O    ] [ P    ] [ LBKT  ]
+Row 3: [ H     ] [ J    ] [ K    ] [ L    ] [ SEMI ] [ APOS  ]
+Row 4: [ N     ] [ M    ] [ COMMA] [ DOT  ] [ SLASH] [ EQUAL ]
+
+Thumbs
+Left top:    [ BSPC ] [ MO(5) ] [ LT(2, LCLK) ]
+Left bottom: [ LALT ] [ LGUI ]
+Right top:   [ MO(1) ] [ SPACE ]
+Right bottom:[ RET ]
+
+Layer 1 - Nav
+-------------
+
+Main matrix:
+
+Left side
+Row 1: [ TRNS ] [ F14  ] [ F15  ] [ NONE ] [ NONE ] [ NONE ]
+Row 2: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ]
+Row 3: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ]
+Row 4: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ]
+
+Right side
+Row 1: [ NONE     ] [ C_PREV   ] [ C_PP     ] [ C_NEXT   ] [ C_MUTE   ] [ C_VOL_UP ]
+Row 2: [ TRNS     ] [ TRNS     ] [ UP       ] [ TRNS     ] [ TRNS     ] [ C_VOL_DN ]
+Row 3: [ TRNS     ] [ LEFT     ] [ DOWN     ] [ RIGHT    ] [ TRNS     ] [ TRNS     ]
+Row 4: [ TRNS     ] [ TRNS     ] [ TRNS     ] [ TRNS     ] [ TRNS     ] [ TRNS     ]
+
+Thumbs
+Left top:    [ TRNS ] [ TRNS ] [ TRNS ]
+Left bottom: [ TRNS ] [ TRNS ]
+Right top:   [ TRNS ] [ TRNS ]
+Right bottom:[ TRNS ]
+
+Layer 2 - Mouse
+---------------
+
+Main matrix:
+
+Left side
+Row 1: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ]
+Row 2: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ]
+Row 3: [ TRNS ] [ TRNS ] [ RCLK ] [ MCLK ] [ LCLK ] [ TRNS ]
+Row 4: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ]
+
+Right side
+Row 1: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ]
+Row 2: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ]
+Row 3: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ]
+Row 4: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ]
+
+Thumbs
+Left top:    [ TRNS ] [ TRNS ] [ TRNS ]
+Left bottom: [ TRNS ] [ RCLK ]
+Right top:   [ TRNS ] [ TRNS ]
+Right bottom:[ TRNS ]
+
+Layer 3 - Media
+---------------
+
+Main matrix:
+
+Left side
+Row 1: [ NONE ] [ NONE ] [ NONE ] [ NONE ] [ NONE ] [ NONE ]
+Row 2: [ NONE ] [ NONE ] [ NONE ] [ NONE ] [ NONE ] [ NONE ]
+Row 3: [ NONE ] [ NONE ] [ NONE ] [ NONE ] [ NONE ] [ NONE ]
+Row 4: [ NONE ] [ NONE ] [ NONE ] [ NONE ] [ NONE ] [ NONE ]
+
+Right side
+Row 1: [ NONE   ] [ NONE   ] [ NONE     ] [ NONE     ] [ NONE   ] [ NONE ]
+Row 2: [ NONE   ] [ NONE   ] [ NONE     ] [ NONE     ] [ NONE   ] [ NONE ]
+Row 3: [ C_MUTE ] [ C_PREV ] [ C_VOL_DN ] [ C_VOL_UP ] [ C_NEXT ] [ NONE ]
+Row 4: [ NONE   ] [ NONE   ] [ NONE     ] [ NONE     ] [ NONE   ] [ NONE ]
+
+Thumbs
+Left top:    [ C_STOP ] [ C_PP   ] [ C_MUTE ]
+Left bottom: [ NONE   ] [ NONE   ]
+Right top:   [ C_MUTE ] [ C_PP   ]
+Right bottom:[ TRNS   ]
+
+Layer 4 - Num
+-------------
+
+Main matrix:
+
+Left side
+Row 1: [ NONE ] [ NONE  ] [ NONE ] [ NONE ] [ NONE ] [ NONE ]
+Row 2: [ NONE ] [ LBKT  ] [ 7    ] [ 8    ] [ 9    ] [ RBKT ]
+Row 3: [ NONE ] [ SEMI  ] [ 4    ] [ 5    ] [ 6    ] [ EQUAL]
+Row 4: [ NONE ] [ GRAVE ] [ 1    ] [ 2    ] [ 3    ] [ BACKSLASH ]
+
+Right side
+Row 1: [ NONE ] [ NONE ] [ NONE ] [ NONE ] [ NONE ] [ NONE ]
+Row 2: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ NONE ]
+Row 3: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ NONE ]
+Row 4: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ NONE ]
+
+Thumbs
+Left top:    [ DOT  ] [ TRNS ] [ MINUS ]
+Left bottom: [ TRNS ] [ TRNS ]
+Right top:   [ TRNS ] [ 0    ]
+Right bottom:[ TRNS ]
+
+Layer 5 - Sym
+-------------
+
+Main matrix:
+
+Left side
+Row 1: [ TRNS      ] [ TRNS     ] [ TRNS     ] [ TRNS     ] [ TRNS      ] [ TRNS         ]
+Row 2: [ TRNS      ] [ LS(LBKT) ] [ LS(N7)   ] [ LS(N8)   ] [ LS(N9)    ] [ LS(RBKT)     ]
+Row 3: [ TRNS      ] [ LS(SEMI) ] [ LS(N4)   ] [ LS(N5)   ] [ LS(N6)    ] [ LS(EQUAL)    ]
+Row 4: [ TRNS      ] [ LS(GRAVE)] [ LS(N1)   ] [ LS(N2)   ] [ LS(N3)    ] [ LS(BACKSLASH)]
+
+Right side
+Row 1: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ GRAVE ]
+Row 2: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS  ]
+Row 3: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS  ]
+Row 4: [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS ] [ TRNS  ]
+
+Thumbs
+Left top:    [ TRNS ] [ TRNS ] [ TRNS ]
+Left bottom: [ TRNS ] [ TRNS ]
+Right top:   [ TRNS ] [ TRNS ]
+Right bottom:[ TRNS ]
+
+Layer 6 - Fun
+-------------
+
+Main matrix:
+
+Left side
+Row 1: [ NONE ] [ NONE     ] [ NONE     ] [ NONE     ] [ NONE     ] [ NONE   ]
+Row 2: [ NONE ] [ BT_SEL 0 ] [ BT_SEL 1 ] [ BT_SEL 2 ] [ BT_SEL 3 ] [ BT_CLR ]
+Row 3: [ NONE ] [ NONE     ] [ NONE     ] [ NONE     ] [ NONE     ] [ NONE   ]
+Row 4: [ NONE ] [ NONE     ] [ NONE     ] [ NONE     ] [ NONE     ] [ NONE   ]
+
+Right side
+Row 1: [ NONE ] [ NONE ] [ NONE ] [ NONE ] [ NONE        ] [ NONE ]
+Row 2: [ F12  ] [ F7   ] [ F8   ] [ F9   ] [ PSCRN       ] [ NONE ]
+Row 3: [ F11  ] [ F4   ] [ F5   ] [ F6   ] [ SLCK        ] [ NONE ]
+Row 4: [ F10  ] [ F1   ] [ F2   ] [ F3   ] [ PAUSE_BREAK ] [ NONE ]
+
+Thumbs
+Left top:    [ TRNS  ] [ SPACE ] [ TAB  ]
+Left bottom: [ TRNS  ] [ TRNS  ]
+Right top:   [ TRNS  ] [ TRNS  ]
+Right bottom:[ TRNS  ]
+
+Behavior Summary
+----------------
+- Left thumb top-left: BSPC
+- Left thumb top-middle: hold momentary Sym layer
+- Left thumb top-right: tap LCLK, hold Mouse layer
+- Left thumb bottom-left: LALT
+- Left thumb bottom-right: LGUI
+- In Mouse layer, left bottom-right thumb becomes RCLK
+- Right thumb top-left: hold momentary Nav layer
+- Right thumb top-right: SPACE
+- Right thumb bottom: RET
+
+Trackball Note
+--------------
+The keymap file above does not show the trackball layer behavior directly, but your overlay was previously set so:
+- Nav layer = scroll layer
+- Mouse layer = snipe / precision layer
+
+Reminder
+--------
+This file is a human-readable mirror of the current keymap. The actual source of truth remains config/charybdis.keymap.
