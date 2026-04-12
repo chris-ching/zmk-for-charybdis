@@ -23,6 +23,15 @@ mouse_lt: mouse_layer_tap {
     bindings = <&mo>, <&mkp>;
 };
 
+lclk_or_rclk: lclk_or_rclk {
+    compatible = "zmk,behavior-mod-morph";
+    label = "LCLK_OR_RCLK";
+    #binding-cells = <0>;
+    bindings = <&mkp LCLK>, <&mkp RCLK>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -32,7 +41,7 @@ mouse_lt: mouse_layer_tap {
 &kp TAB         &kp Q              &kp W              &kp E              &kp R             &kp T              &kp Y              &kp U              &kp I              &kp O              &kp P              &kp LBKT
 &kp LCTRL       &kp A              &kp S              &kp D              &kp F             &kp G              &kp H              &kp J              &kp K              &kp L              &kp SEMI           &kp APOS
 &kp LSHFT       &kp Z              &kp X              &kp C              &kp V             &kp B              &kp N              &kp M              &kp COMMA          &kp DOT            &kp SLASH          &kp EQUAL
-                                          &mkp LCLK    &kp LALT          &kp BSPC          &kp X             &lt 1 SPACE
+                                          &lclk_or_rclk &kp LALT          &kp BSPC          &kp X             &lt 1 SPACE
                                                          &mo 5             &kp LGUI          &kp RET
             >;
         };
