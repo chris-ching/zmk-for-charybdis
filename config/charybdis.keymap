@@ -17,8 +17,8 @@ mouse_lt: mouse_layer_tap {
     compatible = "zmk,behavior-hold-tap";
     label = "MOUSE_LAYER_TAP";
     #binding-cells = <2>;
-    flavor = "balanced";
-    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     bindings = <&mo>, <&mkp>;
 };
